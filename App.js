@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 
 // Injecting constants
 const MONGO_URL = process.env.MONGO_URL || "mongodb://localhost:27017/test";
+const PORT = process.env.PORT || 8080;
 const FRONTEND_APP_LOCATION = path.join(__dirname, '/public');
 
 
@@ -29,4 +30,4 @@ const webController = require('./app/controllers/WebController')(app, configurat
 
 
 // Starting the web application
-app.listen(8080);
+app.listen(PORT);

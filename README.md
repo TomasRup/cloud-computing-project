@@ -8,3 +8,4 @@ Purpose:
 
 Configuration:
 - You may inject Mongo connection URL via environment variable "MONGO_URL"
+- You may inject port via env variable "PORT"
