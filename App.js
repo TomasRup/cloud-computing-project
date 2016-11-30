@@ -6,7 +6,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 // Injecting constants
-const MONGO_URL = "mongodb://localhost:27017/test";
+const MONGO_URL = process.env.MONGO_URL || "mongodb://localhost:27017/test";
 const FRONTEND_APP_LOCATION = path.join(__dirname, '/public');
 
 
