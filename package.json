@@ -1,0 +1,28 @@
+{
+  "name": "cloud-computing-project",
+  "version": "1.0.0",
+  "description": "Cloud Computing VU MIF project",
+  "main": "App.js",
+  "scripts": {
+    "start": "nodemon App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tprupsys/cloud-computing-project.git"
+  },
+  "author": "Tomas Petras Rupsys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tprupsys/cloud-computing-project/issues"
+  },
+  "homepage": "https://github.com/tprupsys/cloud-computing-project#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.12"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
