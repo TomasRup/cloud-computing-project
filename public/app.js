@@ -1,6 +1,6 @@
 var INTERVAL_TIMEOUTS_MS = 1000;
 var RED_IF_OLDER_THAN_MS = 60 * 1000;
-var RGB_REGEX = /^[RGB]$/;
+var RGB_REGEX = /[RGB]/g;
 
 
 // Curent device
