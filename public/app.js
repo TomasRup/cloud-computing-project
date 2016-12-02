@@ -1,6 +1,6 @@
 var INTERVAL_TIMEOUTS_MS = 1000;
 var RED_IF_OLDER_THAN_MS = 60 * 1000;
-var RGB_REGEX = /[RGB]/g;
+var RGB_REGEX = /^[RGB]+$/;
 
 
 // Curent device
@@ -17,7 +17,6 @@ var initCurrentDevice = function() {
         var currentDeviceId = (currentDeviceComponent.device 
             ? currentDeviceComponent.device.deviceId 
             : undefined);
-            console.log
 
         if (currentDeviceId) {
             jQuery.get('/device/' + currentDeviceId, {}, function(response) {
